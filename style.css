@@ -310,6 +310,7 @@
     align-items: center;
     display: inline-flex;
     justify-content: center;
+    fill: currentColor;
 
   }
   .social-link:hover {
@@ -366,51 +367,48 @@
     justify-content: center;
   }
   .network-item {
-    margin-right: 10px;
-  }
+    margin-right:10px;
+    }
+
    /* Постійні клієнти */
+   /* Іконки */
    .customers {
     display: flex;
    }
 
-   .customers-item.network-item:not(:last-child) {
-    margin-right: 30px;
+   .customers-item,
+   .network-item:not(:last-child){
+    margin-right: 10px;
    }
 
    .customers-link {
     display: flex;
     justify-content: center;
     align-items: center;
-
     width: 170px;
     height: 90px;
     border: 1px solid var(--svg);
     border-radius: 4px;
-
     color: var(--svg);
    }
 
-   .customers-link:hover
+   .customers-link:hover,
    .customers-link:focus {
     border: 1px solid var(--accent-color);
     color: var(--accent-color);
    }
-
    .customers-icon {
     fill: currentColor;
    }
-
-
-
-
-
-
+   .customers-item:not(:last-child) {
+    margin-right: 30px;
+   }
+   
   /*Footer*/
   .footer{
     padding-bottom: 60px;
     padding-top: 60px;
   }
-  
   .footer,
   .footer-address {
     color: #ffffff;
